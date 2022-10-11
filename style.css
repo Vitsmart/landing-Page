@@ -1,13 +1,13 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Playfair+Display&family=Poppins:wght@300;400&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'poppins', serif;
 }
 body {
+    
     height: 100vh;
     width: 100vw;
     background: url(https://cdn.pixabay.com/photo/2021/07/06/19/26/drops-6392473__340.jpg);
@@ -101,10 +101,64 @@ input[type]:focus::placeholder{
     background-color: green;
     transition: all 300ms ease-in-out;
 }
+.mobile-view{
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+    .mobile-view{
+        display: block;
+        font-size: 34px;
+        float: right;
+    }
+    header {
+        height: 60px;
+        width: 100%;
+        background:  #011300;
+        color: #fff;
+        
+    }
+    .navigation {
+        height: auto;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        position: relative;
+    }
+    .logo{
+    display: block;
+        font-size: 15px;
+        text-align: center;
+        font-weight: 600;
+    }
+    .menu{
+        display: flex;
+    position: absolute;
+        justify-content: space-between;
+        width: 100%;
+    
+    }
+    ul.menu li{
+        list-style: none;
+        font-size: 13px;
+        padding: 20px 10px;
+        text-transform: uppercase;
+        cursor: pointer;
+        border-bottom: 2px solid transparent;
+        transition: all in 300ms ease-in-out;
+    }
+    .search{
+        
+        display: none;
+    }
+    }
+
+/*======== main ============= */
 main {
     height: (calc(70vh - 80px));
 }
 .container{
+   
     height: inherit;
     display: flex;
     align-items: center;
@@ -162,8 +216,12 @@ margin-left: 30px;
     align-items: center;
 }
 
+/*========== mobile =========*/
+  @media screen and (max-width: 768px){
 
+  }
     
+  
 
 .txt-medium{
     font-size: 20px;
@@ -310,7 +368,7 @@ margin-left: 35px;
     width: 100%;
     display: flex;
     background-color: #010800;
-
+    font-family: 'Playfair Display', sans-serif;
 }
 .footerList{
     flex:5;
