@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -30,36 +30,49 @@
         <div class="container">
         <div class="left">
             <div class="box">
-            <div class="txt-medium">Learn</div>
-            <div class="txt-bigger" style="color: #10fc08;">Web & App</div>
-            <div class="txt-bigger">Development</div>
+                <div class="wrapper">
+                    <div class="text">
+                        <div class="txt-medium">Learn</div>
+                        <div class="txt-bigger" style="color: #10fc08;">Web & App</div>
+                        <div class="txt-bigger">Development</div>
+                    </div>
+                        <div class="image">
+                            <img src="https://media.istockphoto.com/photos/multiethnic-group-of-latin-american-college-students-smiling-picture-id1349297974?b=1&k=20&m=1349297974&s=170667a&w=0&h=HXhZJOkouT4BWGa-or0-AriJlmXJHZdCZBQqGwu6yvs=" alt="" />
+                        </div>
+                </div>
+              
             <hr class="line"/>
-            <div>
+            <div class="details">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor 
                 animi provident cum repellendus ab aut veniam est quos 
-                sapiente hic dolorem dolore optio libero enim eaque asperiores, magni deserunt in.</div>
+                sapiente hic dolorem dolore optio libero enim eaque asperiores, magni deserunt in.
+            </div>
         </div>
     </div>
+        
     
         <div class="right">
             <div class="box">
                 <form class="form-login">
                     <div class="form-group">
-                        <input class="input" type="text" placeholder="User Name" />
+                        <input class="input" type="text" placeholder="Username" required/>
                     </div>
                     <div class="form-group">
-                        <input class="input" type="password" placeholder="password" />
+                        <input class="input" type="password" placeholder="password" required />
                         <div class="form-group">
                             <button class="btn btn-login">Login</button>
 
                 </form>
-                <div>Don't have an Account?</div>
-                <div>
-                    <a href="#signup">Sign up</a>
+                <div class="register">Don't have an Account?</div>
+                <div class="register">
+                    <a href="#signup">Sign up now</a>
                 </div>
-                <div>Login With</div>
+                <div class="register social">Login With</div>
                 <div class="social-media">
-                    <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                    <i class="fab fa-facebook" aria-hidden="true"></i>
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                    <i class="fab fa-google" aria-hidden="true"></i>
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
                 </div>
             </div>
         </div>
@@ -73,12 +86,12 @@
             <div class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis ullam magni .</div>
         </div>
         <div class="sectionBox">
-            <div class="title">Learn JavaScript</div>
+            <div class="title">Learn MERN stack</div>
             <hr class="line"/>
             <div class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis ullam magni .</div>
         </div>
         <div class="sectionBox">
-            <div class="title">Learn JavaScript</div>
+            <div class="title">Learn Python</div>
             <hr class="line"/>
             <div class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis ullam magni .</div>
         </div>
@@ -86,5 +99,28 @@
         
         
     </section>
+    <!-- <div class="bg-select">
+        <div class="bg-option bg-a">&larr;</div>
+        <div class="bg-option bg-b">&rarr;</div>
+         -->
+    </div>
+    <footer>
+<div class="footer">
+    <ul class="footerList">
+        <li>Contact</li>
+        <li>About the Author</li>
+        <li>&copy;Copyright</li>
+    </ul>
+    
+        <div class="socialFooter">
+            <i class="fab fa-facebook" aria-hidden="true"></i>
+            <i class="fab fa-instagram" aria-hidden="true"></i>
+            <i class="fab fa-google" aria-hidden="true"></i>
+            <i class="fab fa-twitter" aria-hidden="true"></i>
+        </div>
+    
+</div>
+
+    </footer>
 </body>
 </html>

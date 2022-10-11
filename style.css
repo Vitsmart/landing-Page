@@ -15,7 +15,7 @@ body {
 }
 header {
     height: 80px;
-    background:  #10fc08;
+    background:  #011300;
     color: #fff;
     transition: all in 300ms ease-in-out;
 }
@@ -58,11 +58,12 @@ ul.menu li:hover{
     flex: 3;
     display: flex;
     align-items: center;
+    font-size: 10px;
 }
 .input{
     border-radius: 5px;
     background: transparent;
-    border: 2px solid black;
+    border: 2px solid plum;
     padding: 8px 5px;
     outline: none;
     caret-color: #fff;
@@ -81,7 +82,7 @@ ul.menu li:hover{
 
 input[type]:focus::placeholder{
     font-size: 10px;
-    color: gray;
+    color: black;
     transition: all in 300ms ease-in-out;
     
 }
@@ -93,7 +94,7 @@ input[type]:focus::placeholder{
     color: #fff;
     font-weight: 500;
     letter-spacing: 1px;
-    font-size: 13px;
+    font-size: 17px;
     border-radius: 5px;
 }
 .btn :hover{
@@ -112,10 +113,10 @@ color: #fff;
 padding: 50px;
 }
 .left{
-    flex: 6;
+    flex: 7;
 }
 .right{
-    flex: 4;
+    flex: 3;
     
 }
 .left,
@@ -123,7 +124,27 @@ padding: 50px;
     padding: 40px;
     align-self: flex-start;
 }
+.wrapper{
+    display: flex;
+}
+
+
+.text{
+    flex: 4;
+justify-content: center;
+align-self: center;
+margin-left: 30px;
+
+}
+.details{
+    font-size: 16px;
+}
+.image{
+    flex: 6;
+}
+
 .box{
+    
     padding: 40px 20px;
     border: 2px solid transparent;
     background-color: #102e1059;
@@ -131,9 +152,19 @@ padding: 50px;
     backdrop-filter: blur(5px);
 }
 .left .box{
-    height: 300px;
-    width: 700px;
+    height: 500px;
+    width: 900px;
 }
+.right .box{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+    
+
 .txt-medium{
     font-size: 20px;
 }
@@ -142,7 +173,7 @@ padding: 50px;
     font-weight: 600;
 }
 .form-login{
-    width: 100%;
+    width: 80%;
     padding: 10px 30px;
 
 }
@@ -152,7 +183,7 @@ padding: 50px;
 }
 .form-login .input{
     border:none;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid darkslategray;
     width: 90%;
     font-size: 18px;
  }
@@ -165,6 +196,47 @@ padding: 50px;
  .form-login input[type]:focus {
     width: 90%;
  }
+ a{
+    text-decoration: none;
+    color: #10fc08;
+    font-size: 20px;
+    cursor: pointer;
+    
+ }
+ a:hover{
+    text-decoration: underline;
+    
+ }
+ .register{
+    text-align: center;
+    justify-content: center;
+ }
+ .social{
+    margin-top: 10px;
+ }
+ .social-media{
+    height: 50px;
+    padding: 5px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+
+ }
+ .social-media >*{
+    margin-left: 10px;
+ }
+ .social-media i {
+    height: 100%;
+    filter: invert(1);
+    transition: all 300ms ease-in-out;
+    transform: scale(1.1);
+    cursor: pointer;
+ }
+.social-media i:hover{
+filter: invert(0.8);
+transform: scale(1.2);
+}
+
 .line{
     
     height: 3px;
@@ -182,7 +254,7 @@ section{
     height: 40vh;
     margin: 0 20px;
     display: flex;
-    
+    position: relative;
 }
 .sectionBox{
 padding: 40px 20px;
@@ -193,6 +265,8 @@ width: 25%;
 height: 30vh;
 margin-left: 35px;
 
+
+
 }
 .title{
     text-align: center;
@@ -202,8 +276,73 @@ margin-left: 35px;
 }
 
 .desc{
-    font-size: 13px;
+    margin: 15px;
+    font-size: 15px;
+    line-height: 1.5;
     justify-content: center;
     justify-items: center;
     color: #fff;
 }
+.bg-select{
+    position: absolute;
+    height: 20px;
+    width: 100px;
+    display: flex;
+
+    top: 118vh;
+    left: 48%;
+    bottom: 5%;
+}
+.bg-option {
+    height: 25px;
+    width: 25px;
+    margin-left: 15px;
+}
+.bg-a{
+    background-color: yellow;
+    
+}
+.bg-b{
+    background-color: gray;
+}
+.footer{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    background-color: #010800;
+
+}
+.footerList{
+    flex:5;
+    list-style: none;
+    color: #fff;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.footerList li{
+    font-size: 15px;
+    margin-left: 35px;
+    cursor: pointer;
+
+}
+.socialFooter{
+    flex: 5;
+    display: flex;
+    margin-top: 20px;
+    margin-left: 50px;
+    justify-content: center;
+    margin-right: 100px;
+    
+}
+.socialFooter i{
+    font-size: 17px;
+    filter: invert(1);
+    transition: all 300ms ease-in-out;
+    transform: scale(1.1);
+    cursor: pointer;
+    margin-left: 25px;
+}
+
